@@ -17,6 +17,18 @@ const nextConfig = {
     BUILD_CMS: process.env.BUILD_CMS,
     CL_CLIENT_ID: process.env.CL_CLIENT_ID,
     CL_ENDPOINT: process.env.CL_ENDPOINT
+  },
+  async rewrites() {
+    return [
+      {
+        source: "/blog",
+        destination: "https://hh-store.vercel.app/blog"
+      },
+      {
+        source: "/blog/:path*",
+        destination: "https://hh-store.vercel.app/blog/:path*"
+      }
+    ];
   }
 };
 
