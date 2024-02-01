@@ -22,11 +22,11 @@ const nextConfig = {
     return [
       {
         source: "/blog",
-        destination: "https://hh-store.vercel.app/blog"
+        destination: "https://hh-store-blog.vercel.app/blog"
       },
       {
         source: "/blog/:path*",
-        destination: "https://hh-store.vercel.app/blog/:path*"
+        destination: "https://hh-store-blog.vercel.app/blog/:path*"
       }
     ];
   }
