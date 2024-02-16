@@ -2,11 +2,7 @@
 
 const nextConfig = {
   images: {
-    remotePatterns: [
-      { hostname: "cdn.sanity.io" },
-      { hostname: "images.unsplash.com" },
-      { hostname: "data.commercelayer.app" }
-    ]
+    remotePatterns: [{ hostname: "cdn.sanity.io" }, { hostname: "images.unsplash.com" }]
   },
   async rewrites() {
     return [

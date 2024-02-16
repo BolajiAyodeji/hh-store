@@ -102,7 +102,7 @@ const ProductPage: React.FC<Props> = ({ lang, country, countries, buildLanguages
               <div className="flex items-center">
                 <div className="relative" data-children-count="1">
                   <select
-                    className="rounded border appearance-none border-gray-400 py-2 focus:outline-none focus:border-blue-500 text-base pl-3 pr-10"
+                    className="rounded border appearance-none border-gray-400 py-2 focus:outline-none focus:border-yellow-900 text-base pl-3 pr-10"
                     value={selectedVariant}
                     onChange={(e) => setSelectedVariant(e.target.value)}
                   >
@@ -133,7 +133,7 @@ const ProductPage: React.FC<Props> = ({ lang, country, countries, buildLanguages
                 <PricesContainer>
                   <Price
                     skuCode={selectedVariant}
-                    className="text-indigo-600 mr-1"
+                    className="text-yellow-900 mr-1"
                     compareClassName="text-gray-500 line-through text-lg"
                   />
                 </PricesContainer>
@@ -141,7 +141,7 @@ const ProductPage: React.FC<Props> = ({ lang, country, countries, buildLanguages
               <AddToCartButton
                 skuCode={selectedVariant}
                 label={locale[lang].addToCart as string}
-                className="inline-flex items-center px-4 py-2 border border-gray-300 shadow-sm text-sm md:text-base font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="inline-flex items-center px-4 py-2 border border-gray-300 shadow-sm text-sm md:text-base font-medium rounded-md text-white bg-yellow-900 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:bg-yellow-900 disabled:opacity-50 disabled:cursor-not-allowed"
               />
             </div>
           </div>

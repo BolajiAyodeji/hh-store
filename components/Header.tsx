@@ -23,11 +23,11 @@ const Header: React.FC<Props> = ({ lang, countryCode, pageTitle }) => {
           <div className="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
             <div className="flex items-center justify-between w-full md:w-auto">
               <Link href={`/${countryCode}/${lang}`} passHref>
-                <span className="sr-only">Commerce Layer</span>
+                <span className="sr-only">HH Store</span>
                 <Image
                   className="h-8 w-auto"
-                  src="//data.commercelayer.app/assets/logos/full-logo/black/commercelayer_full_logo_black.svg"
-                  alt="Commerce Layer Logo"
+                  src="/hh-store.svg"
+                  alt="HH Store's Logo"
                   loading="eager"
                   width={200}
                   height={50}
@@ -40,7 +40,13 @@ const Header: React.FC<Props> = ({ lang, countryCode, pageTitle }) => {
               <div className="flex flex-row items-center">
                 <span className="hidden md:inline-block">{locale[lang].shoppingBag}</span>
                 <span className="md:hidden">
-                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <path
                       d="M27 6H5C4.44772 6 4 6.44772 4 7V25C4 25.5523 4.44772 26 5 26H27C27.5523 26 28 25.5523 28 25V7C28 6.44772 27.5523 6 27 6Z"
                       stroke="currentColor"
@@ -66,7 +72,7 @@ const Header: React.FC<Props> = ({ lang, countryCode, pageTitle }) => {
                 </span>
 
                 <LineItemsContainer>
-                  <LineItemsCount className="animate-bounce -ml-4 md:ml-2 inline-flex items-center px-2 py-1 rounded-full text-sm font-medium leading-5 bg-indigo-500 text-gray-50" />
+                  <LineItemsCount className="animate-bounce -ml-4 md:ml-2 inline-flex items-center px-2 py-1 rounded-full text-sm font-medium leading-5 bg-yellow-900 text-gray-50" />
                 </LineItemsContainer>
               </div>
             </Link>

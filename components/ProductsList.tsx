@@ -27,7 +27,7 @@ const ProductsList = ({ products }: Props) => {
                 as={`/${countryCode}/${lang}/${slug}`}
                 passHref
               >
-                <div className="flex flex-col h-full border-2 rounded-lg p-5 md:p-3 hover:shadow-2xl">
+                <div className="flex flex-col h-full border-2 border-yellow-900 rounded-lg p-5 md:p-3 hover:shadow-2xl">
                   <div className="aspect-w-3 aspect-h-2 mb-5">
                     <Image
                       className="object-contain"
@@ -43,7 +43,7 @@ const ProductsList = ({ products }: Props) => {
                       <li>
                         <PricesContainer skuCode={code}>
                           <Price
-                            className="text-indigo-600 mr-1 text-base font-bold md:text-sm"
+                            className="text-yellow-900 mr-1 text-base font-bold md:text-sm"
                             compareClassName="text-gray-500 line-through text-sm md:text-xs"
                           />
                         </PricesContainer>

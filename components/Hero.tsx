@@ -20,27 +20,20 @@ const Header: React.FC<Props> = ({ lang }) => {
                 {locale[lang].welcome}!
               </h1>
               <p className="relative z-10 mt-6 text-lg leading-8 text-gray-700">
-                This ecommerce store is powered by {""}
-                <a
-                  href="//commercelayer.io?utm_source=commercelayer-sanity-template"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span className="font-bold">Commerce Layer</span>
-                </a>
-                — an API-first global commerce solution that can easily make any digital experience
-                shoppable. This demo was built with <span className="font-bold">Nextjs</span> and{" "}
-                <span className="font-bold">Sanity</span>.
+                This is your ultimate destination for all things exceptional in the world of online
+                shopping. As your premier multipurpose e-commerce emporium, HH STORE curates a
+                diverse array of high-quality products meticulously selected to cater to your every
+                need and desire.
               </p>
               <div className="mt-16 flex items-center gap-x-6">
                 <a
                   href="#start"
-                  className="z-10 rounded-md border-2 border-gray-900 hover:bg-gray-900 hover:text-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  className="z-10 rounded-md border-2 border-yellow-900 hover:bg-yellow-900 hover:text-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   {locale[lang].startShopping}
                 </a>
                 <a
-                  href="//commercelayer.io/why?utm_source=commercelayer-sanity-template"
+                  href="https://hashnode.com/headless?utm_source=bolajiayodeji"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="z-10 text-sm font-semibold leading-6 text-gray-900"
