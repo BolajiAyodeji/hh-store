@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import locale from "@locale/index";
 
 type Props = {
@@ -29,14 +30,9 @@ const Header: React.FC<Props> = ({ lang }) => {
                 >
                   {locale[lang].startShopping}
                 </a>
-                <a
-                  href="/blog"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="z-10 text-sm font-semibold leading-6 text-gray-900"
-                >
+                <Link href="/blog" className="z-10 text-sm font-semibold leading-6 text-gray-900">
                   {locale[lang].visitBlog} <span aria-hidden="true">→</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
