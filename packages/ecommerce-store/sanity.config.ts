@@ -1,8 +1,8 @@
 import { defineConfig } from "sanity";
 import { deskTool } from "sanity/desk";
 import { visionTool } from "@sanity/vision";
-import schemas from "../../schemas/schemaTypes";
-import { Logo } from "../../plugins/studioLogo";
+import schemas from "./schemas/schemaTypes";
+import { Logo } from "./plugins/studioLogo";
 
 const title =
   process.env.NEXT_PUBLIC_SANITY_PROJECT_TITLE || "[Studio] Commerce Layer Sanity Starter";
