@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json}\"",
-    "build": "cd packages/ecommerce-store && pnpm run build"
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json}\""
   },
   "workspaces": [
     "packages/*"

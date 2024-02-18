@@ -36,4 +36,4 @@ jobs:
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: cd packages/ecommerce-store && npx semantic-release
+        run: npx semantic-release
