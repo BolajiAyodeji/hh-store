@@ -30,12 +30,12 @@ const Header: React.FC<Props> = ({ lang }) => {
                   {locale[lang].startShopping}
                 </a>
                 <a
-                  href="https://hashnode.com/headless?utm_source=bolajiayodeji"
+                  href="/blog"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="z-10 text-sm font-semibold leading-6 text-gray-900"
                 >
-                  {locale[lang].learnMore} <span aria-hidden="true">→</span>
+                  {locale[lang].visitBlog} <span aria-hidden="true">→</span>
                 </a>
               </div>
             </div>
