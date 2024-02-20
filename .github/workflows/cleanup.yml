@@ -12,4 +12,4 @@ jobs:
         with:
           # ⚠️ The provided token needs permission for admin write:org
           token: ${{ secrets.CLEANUP_TOKEN }}
-          environment: hh-store-hashnode-blog
+          environment: staging
