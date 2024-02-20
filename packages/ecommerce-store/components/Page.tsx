@@ -5,6 +5,8 @@ import { Country } from "@typings/models";
 
 type Props = {
   children: React.ReactNode;
+  productName?: string;
+  productImage?: string;
   buildLanguages?: Country[];
   lang: string;
   clToken: string;
@@ -12,19 +14,19 @@ type Props = {
   languageCode: string;
   countryCode: string;
   countries?: any[];
-  pageTitle?: string;
 };
 
 const Page: React.FC<Props> = ({
   children,
+  productName,
+  productImage,
   buildLanguages,
   lang,
   clToken,
   clEndpoint,
   languageCode,
   countryCode,
-  countries,
-  pageTitle
+  countries
 }) => {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
   const isEnvEmpty = siteUrl === "";
@@ -37,7 +39,8 @@ const Page: React.FC<Props> = ({
       <OrderStorage persistKey={`cl_order-${countryCode}`}>
         <OrderContainer attributes={{ language_code: languageCode, return_url, cart_url }}>
           <Layout
-            pageTitle={pageTitle}
+            productName={productName}
+            productImage={productImage}
             buildLanguages={buildLanguages}
             lang={lang}
             countryCode={countryCode}

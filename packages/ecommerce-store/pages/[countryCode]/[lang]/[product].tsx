@@ -50,8 +50,9 @@ const ProductPage: React.FC<Props> = ({ lang, country, countries, buildLanguages
 
   return !lang || !product ? null : (
     <Page
+      productName={product.name}
+      productImage={imgUrl}
       buildLanguages={buildLanguages}
-      pageTitle={product.name}
       lang={lang}
       clToken={clToken}
       clEndpoint={clEndpoint}

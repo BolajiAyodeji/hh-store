@@ -8,13 +8,14 @@ import SEOHead from "@components/SEO";
 type Props = {
   lang: string;
   countryCode: string;
-  pageTitle?: string;
+  productName?: string;
+  productImage?: string;
 };
 
-const Header: React.FC<Props> = ({ lang, countryCode, pageTitle }) => {
+const Header: React.FC<Props> = ({ lang, countryCode, productName, productImage }) => {
   return (
     <>
-      <SEOHead productName={pageTitle} />
+      <SEOHead productName={productName} productImage={productImage} />
       <div className="sticky top-0 max-w-7xl mx-auto">
         <nav
           className="relative flex items-center justify-between sm:h-10 md:justify-center"
