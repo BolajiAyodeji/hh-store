@@ -2,7 +2,7 @@
 
 [![Headless Hashnode Store](./images/preview.jpg)](https://hashnode.com/headless?utm_source=bolajiayodeji)
 
-> [INFO]
+> [!INFO]
 >
 > A demo ecommerce store and blog for this [Integrating Headless Hashnode with E-commerce Platforms for Content-Driven Commerce](#) tutorial.
 
