@@ -8,7 +8,7 @@ import { useGetToken } from "@hooks/GetToken";
 import locale from "@locale/index";
 import Page from "@components/Page";
 import { Product, Country } from "@typings/models";
-import { parseImg, parseLanguageCode } from "@utils/parser";
+import { parseLanguageCode } from "@utils/parser";
 import sanityApi from "@utils/sanity/api";
 
 type Props = {
@@ -29,7 +29,7 @@ const ProductPage: React.FC<Props> = ({ lang, country, countries, buildLanguages
   });
   const languageCode = parseLanguageCode(lang, "toLowerCase", true);
 
-  const imgUrl = parseImg(_.first(product?.images)?.url as string);
+  const imgUrl = _.first(product?.images)?.url as string;
   const firstVariantCode = _.first(product?.variants)?.code as string;
   const variantOptions = product?.variants?.map((variant) => {
     return {
