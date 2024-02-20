@@ -1552,6 +1552,8 @@ type PublicationIntegrations {
   A flag indicating if the custom domain is enabled for integration with Plausible Analytics.
   """
   plausibleAnalyticsEnabled: Boolean
+  """The share ID for the Hashnode-provided Umami analytics instance."""
+  umamiShareId: String
   """The ID for the Hashnode-provided Umami analytics instance."""
   umamiWebsiteUUID: String
   """
