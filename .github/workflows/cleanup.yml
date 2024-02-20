@@ -1,9 +1,8 @@
 name: Delete Environment
 
 on:
-  delete:
-    branches-ignore:
-      - main
+  push:
+    branches: [main, beta, alpha]
 
 jobs:
   delete:
