@@ -52,6 +52,7 @@ const ProductPage: React.FC<Props> = ({ lang, country, countries, buildLanguages
     <Page
       productName={product.name}
       productImage={imgUrl}
+      productUrl={`${countryCode}/${lang}/${product.slug}`}
       buildLanguages={buildLanguages}
       lang={lang}
       clToken={clToken}

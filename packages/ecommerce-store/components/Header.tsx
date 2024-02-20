@@ -10,12 +10,13 @@ type Props = {
   countryCode: string;
   productName?: string;
   productImage?: string;
+  productUrl?: string;
 };
 
-const Header: React.FC<Props> = ({ lang, countryCode, productName, productImage }) => {
+const Header: React.FC<Props> = ({ lang, countryCode, productName, productImage, productUrl }) => {
   return (
     <>
-      <SEOHead productName={productName} productImage={productImage} />
+      <SEOHead productName={productName} productImage={productImage} productUrl={productUrl} />
       <div className="sticky top-0 max-w-7xl mx-auto">
         <nav
           className="relative flex items-center justify-between sm:h-10 md:justify-center"

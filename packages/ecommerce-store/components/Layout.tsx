@@ -7,6 +7,7 @@ type Props = {
   children: React.ReactNode;
   productName?: string;
   productImage?: string;
+  productUrl?: string;
   lang: string;
   countryCode: string;
   buildLanguages?: Country[];
@@ -17,6 +18,7 @@ const Layout: React.FC<Props> = ({
   children,
   productName,
   productImage,
+  productUrl,
   buildLanguages = [],
   lang,
   countryCode,
@@ -31,6 +33,7 @@ const Layout: React.FC<Props> = ({
             countryCode={countryCode}
             productName={productName}
             productImage={productImage}
+            productUrl={productUrl}
           />
         </div>
 

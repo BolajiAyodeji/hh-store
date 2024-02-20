@@ -4,6 +4,7 @@ import NextHead from "next/head";
 type Props = {
   productName?: string;
   productImage?: string;
+  productUrl?: string;
 };
 
 const title = process.env.NEXT_PUBLIC_SITE_NAME || "Commerce Layer Sanity Template";
@@ -15,7 +16,7 @@ const ogImage = "/preview.jpg";
 const favicon = "/favicon.jpg";
 const touchIcon = "/seo/ios/192.png";
 
-const SEOHead: React.FunctionComponent<Props> = ({ productName, productImage }) => {
+const SEOHead: React.FunctionComponent<Props> = ({ productName, productImage, productUrl }) => {
   return (
     <NextHead>
       <title>{productName ? `${productName} | ${title}` : title}</title>
@@ -24,9 +25,9 @@ const SEOHead: React.FunctionComponent<Props> = ({ productName, productImage }) 
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width,initial-scale=1" />
       <link rel="manifest" href="/manifest.json" />
-      <meta name="theme-color" content="#000000" />
+      <meta name="theme-color" content="#713f12" />
       <meta name="keywords" content={keywords} />
-      <meta property="og:url" content={url} />
+      <meta property="og:url" content={productUrl ? `${url}/${productUrl}` : url} />
       <meta property="og:title" content={productName ? `${productName} | ${title}` : title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={productImage ? productImage : ogImage} />
