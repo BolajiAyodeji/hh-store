@@ -8,25 +8,25 @@ A demo of a fully functional e-commerce store and blog for this [Integrating Hea
 
 ## Getting Started
 
-To run this project locally, install all dependencies using the command:
+> [!NOTE]
+> 
+> To run this project locally, install all dependencies using the `pnpm install` command and add all the required environmental variables using the `.env.example` files:
 
-```bash
-pnpm install
-```
-
-The store is built with [commercelayer-sanity-template](https://github.com/commercelayer/commercelayer-sanity-template) (live demo: <https://hh-store.vercel.app>). The code is located in `packages/ecommerce-store`, so run the command below to start it up:
+The store is built with [commercelayer-sanity-template](https://github.com/commercelayer/commercelayer-sanity-template) (live demo: <https://hh-store.vercel.app>), and the code is located in `packages/ecommerce-store`, so run the command below to start it up:
 
 ```bash
 cd packages/ecommerce-store && pnpm run dev
 ```
 
-The blog is built with Hashnode's [starter-kit](https://github.com/Hashnode/starter-kit) (live demo: <https://hh-store.vercel.app/blog>). The code is located in `packages/hashnode-blog`, so run the command below to start it up:
+The blog is built with Hashnode's [starter-kit](https://github.com/Hashnode/starter-kit) (live demo: <https://hh-store.vercel.app/blog>), and the code is located in `packages/hashnode-blog`, so run the command below to start it up:
 
 ```bash
 cd packages/hashnode-blog && pnpm run dev
 ```
 
-That's all! Ensure to read the [accompanying tutorial](#) to learn more.
+✅ That's all! This will run the store at `localhost:3000`, content studio at `localhost:3000/studio`, and blog at `localhost:3000/studio`.
+
+Ensure to read the [accompanying tutorial](#) to learn more.
 
 ## Store Preview
 
