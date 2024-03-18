@@ -1,6 +1,6 @@
 # Headless Hashnode Store
 
-A demo of a fully functional e-commerce store and blog for this [Integrating Headless Hashnode with E-commerce Platforms for Content-Driven Commerce](#) tutorial.
+A demo of a fully functional e-commerce store and blog for this [Integrating Headless Hashnode with E-commerce Platforms for Content-Driven Commerce](https://hashnode.com/blog/integrating-hashnode-headless-cms-with-ecommerce-platforms-for-content-driven-commerce) tutorial.
 
 [![Headless Hashnode Store](./images/preview.jpg)](https://hashnode.com/headless?utm_source=bolajiayodeji)
 
