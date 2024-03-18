@@ -1,6 +1,6 @@
 # Headless Hashnode Store
 
-A demo multi-country ecommerce store built with [Commerce Layer's sanity-template](https://github.com/commercelayer/commercelayer-sanity-template) (Nextjs and Sanity) for [this tutorial](#).
+A demo multi-country ecommerce store built with [Commerce Layer's sanity-template](https://github.com/commercelayer/commercelayer-sanity-template) (Nextjs and Sanity) for [this tutorial](https://hashnode.com/blog/integrating-hashnode-headless-cms-with-ecommerce-platforms-for-content-driven-commerce).
 
 Live demo: <https://hh-store.vercel.app>.
 
