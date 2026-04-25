@@ -82,7 +82,7 @@
     "js-cookie": "^3.0.1",
     "next": "^16.2.3",
     "next-sanity": "^8.0.0",
-    "postcss": "^8.4.35",
+    "postcss": "^8.5.10",
     "prop-types": "^15.8.1",
     "query-string": "^7.1.1",
     "react": "^18.2.0",
